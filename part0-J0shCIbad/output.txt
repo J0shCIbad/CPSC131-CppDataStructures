@@ -1,0 +1,33 @@
+
+Grocery Item Regression Test:  Construction
+  [PASSED] Default price: expected and actual '0.00' are equal
+  [PASSED] Symmetrical product name mutator/query: expected and actual '1-3-5' are equal
+  [PASSED] Symmetrical brand name mutator/query: expected and actual '21-23-25' are equal
+  [PASSED] Symmetrical UPC code mutator/query: expected and actual '11-13-15' are equal
+  [PASSED] Symmetrical price mutator/query: expected and actual '31.11' are equal
+  [PASSED] Grocery Item construction with arguments: expected and actual 'true' are equal
+  [PASSED] Copy construction: expected and actual 'true' are equal
+  [PASSED] Copy construction: expected and actual 'true' are equal
+
+Grocery Item Regression Test:  Relational comparisons
+  [PASSED] Equality test - is equal: expected and actual '"a1", "a1", "a1", 10.00' are equal
+  [PASSED] Equality test - is not equal: expected and actual 'true' are equal
+  [PASSED] Equality test - floating point lower bound : expected and actual '"a1", "a1", "a1", 10.00' are equal
+  [PASSED] Equality test - floating point upper bound : expected and actual '"a1", "a1", "a1", 10.00' are equal
+  [PASSED] Inequality test by Price: expected and actual 'true' are equal
+  [PASSED] Inequality test by Product Name: expected and actual 'true' are equal
+  [PASSED] Inequality test by Brand Name: expected and actual 'true' are equal
+  [PASSED] Inequality test by UPC: expected and actual 'true' are equal
+
+Grocery Item Regression Test:  Input/Output
+  [PASSED] Symmetrical Grocery Item insertion and extraction 1: expected and actual '"", "", "", 0.00' are equal
+  [PASSED] Symmetrical Grocery Item insertion and extraction 2: expected and actual '"", "", "product name", 0.00' are equal
+  [PASSED] Symmetrical Grocery Item insertion and extraction 3: expected and actual '"", "brand name", "product name", 0.00' are equal
+  [PASSED] Symmetrical Grocery Item insertion and extraction 4: expected and actual '"UPC", "brand name", "product name", 0.00' are equal
+  [PASSED] Symmetrical Grocery Item insertion and extraction 5: expected and actual '"UPC", "brand name", "product name", 123.79' are equal
+
+
+Summary: 21 of 21 (100.00%) tests passed
+
+
+

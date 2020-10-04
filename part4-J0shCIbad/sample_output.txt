@@ -1,0 +1,20 @@
+Item UPC: 00000000004459 is currently unavailable in this store.
+"00008725033105", "Long Grove", "Pretzel Hldy Bavarian Wht", 20.24
+                                                           2               40.48
+"00011212002058", "Sevigny", "Candy Ribbon Thin Box", 8.26
+                                                           1                8.26
+"00027018302933", "Good Earth", "Good Earth Slimming Tea - 15 Tea Bags - Case Of 6", 5.24
+                                                          10               52.40
+10 units of item 00027018302933 were available and sold, further items could not be served.
+
+Invalid UPC
+
+"00028400240116", "Cheetos", "Cheetos Mix-ups Cheezy Salsa Mix Flavored Snack Mix", 24.65
+                                                           2               49.30
+"00079746000162", "Matt's", "Matt's Chocolate Chip Cookies", 15.83
+                                                           1               15.83
+"00083502087632", "Health Plus", "Health Plus The Original Colon Cleanse - 200 Capsules", 22.80
+                                                           2               45.60
+"00084380968846", "St Dalfour", "St Dalfour Organic Tea Golden Peach - 25 Tea Bags", 2.29
+                                                           3                6.87
+                                               Total Cost: $218.74

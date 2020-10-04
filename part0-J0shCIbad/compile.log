@@ -1,0 +1,77 @@
+compiling ...
+  ./GroceryItem.cpp
+  ./main.cpp
+  ./GroceryItemTests.cpp
+
+g++ -g3 -O0 -pthread -std=c++17 -I./ -DUSING_TOMS_SUGGESTIONS -D__func__=__PRETTY_FUNCTION__ -Wall -Wextra -pedantic -Wdelete-non-virtual-dtor -Wduplicated-branches -Wduplicated-cond -Wfloat-equal -Winit-self -Wlogical-op -Wnoexcept -Wnon-virtual-dtor -Wold-style-cast -Wstrict-null-sentinel -Wsuggest-override -Wswitch-default -Wswitch-enum -Woverloaded-virtual -Wuseless-cast -Wzero-as-null-pointer-constant
+g++ (SUSE Linux) 9.2.1 20200109 [gcc-9-branch revision 280039]
+Copyright (C) 2019 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+In file included from ./GroceryItem.cpp:14:
+./GroceryItem.hpp: In constructor ‘GroceryItem::GroceryItem(const string&, const string&, const string&, double)’:
+./GroceryItem.hpp:42:17: warning: ‘GroceryItem::_productName’ will be initialized after [-Wreorder]
+   42 |     std::string _productName;
+      |                 ^~~~~~~~~~~~
+./GroceryItem.hpp:41:17: warning:   ‘std::string GroceryItem::_brandName’ [-Wreorder]
+   41 |     std::string _brandName;
+      |                 ^~~~~~~~~~
+./GroceryItem.cpp:17:5: warning:   when initialized here [-Wreorder]
+   17 |     GroceryItem::GroceryItem( const std::string & productName,
+      |     ^~~~~~~~~~~
+In file included from ./GroceryItem.cpp:14:
+./GroceryItem.hpp:41:17: warning: ‘GroceryItem::_brandName’ will be initialized after [-Wreorder]
+   41 |     std::string _brandName;
+      |                 ^~~~~~~~~~
+./GroceryItem.hpp:40:17: warning:   ‘std::string GroceryItem::_upcCode’ [-Wreorder]
+   40 |     std::string _upcCode;
+      |                 ^~~~~~~~
+./GroceryItem.cpp:17:5: warning:   when initialized here [-Wreorder]
+   17 |     GroceryItem::GroceryItem( const std::string & productName,
+      |     ^~~~~~~~~~~
+./main.cpp: In function ‘int main(int, char**)’:
+./main.cpp:17:10: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+   17 |  while(c = std::cin.get() != std::char_traits<char>::eof()){
+      |        ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./main.cpp:14:14: warning: unused parameter ‘argc’ [-Wunused-parameter]
+   14 | int main(int argc, char** argv){
+      |          ~~~~^~~~
+./main.cpp:14:27: warning: unused parameter ‘argv’ [-Wunused-parameter]
+   14 | int main(int argc, char** argv){
+      |                    ~~~~~~~^~~~
+
+Successfully created  "homework_(g++).exe"
+
+clang++ -g3 -O0 -pthread -std=c++17 -I./ -DUSING_TOMS_SUGGESTIONS -D__func__=__PRETTY_FUNCTION__ -Weverything -Wno-unused-template -Wno-sign-conversion -Wno-exit-time-destructors -Wno-global-constructors -Wno-missing-prototypes -Wno-weak-vtables -Wno-padded -Wno-double-promotion -Wno-c++98-compat-pedantic -Wno-c++11-compat-pedantic -Wno-c++14-compat-pedantic -Wno-c++17-compat-pedantic -fdiagnostics-show-category=name
+clang version 9.0.1 
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+./GroceryItem.cpp:21:20: warning: field '_productName' will be initialized after field '_brandName' [-Wreorder,Semantic Issue]
+                 : _productName(productName),
+                   ^
+./GroceryItem.cpp:22:18: warning: field '_brandName' will be initialized after field '_upcCode' [-Wreorder,Semantic Issue]
+                 _brandName(brandName),
+                 ^
+2 warnings generated.
+./main.cpp:17:10: warning: using the result of an assignment as a condition without parentheses [-Wparentheses,Semantic Issue]
+        while(c = std::cin.get() != std::char_traits<char>::eof()){
+              ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./main.cpp:17:10: note: place parentheses around the assignment to silence this warning [Semantic Issue]
+        while(c = std::cin.get() != std::char_traits<char>::eof()){
+                ^
+              (                                                  )
+./main.cpp:17:10: note: use '==' to turn this assignment into an equality comparison [Semantic Issue]
+        while(c = std::cin.get() != std::char_traits<char>::eof()){
+                ^
+                ==
+./main.cpp:14:14: warning: unused parameter 'argc' [-Wunused-parameter,Semantic Issue]
+int main(int argc, char** argv){
+             ^
+./main.cpp:14:27: warning: unused parameter 'argv' [-Wunused-parameter,Semantic Issue]
+int main(int argc, char** argv){
+                          ^
+3 warnings generated.
+
+Successfully created  "homework_(clang++).exe"
